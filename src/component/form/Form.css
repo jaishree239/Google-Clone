@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-items: center; */
+    margin:  150px;
+    /* background-color: aqua; */
+}
+
+.form__header{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+
+.form__inputs{
+    display: flex; 
+    flex-direction: column;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;  
+    margin: 5px;
+}
