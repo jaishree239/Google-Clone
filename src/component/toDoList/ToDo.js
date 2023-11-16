@@ -1,7 +1,78 @@
 import React, { useState } from 'react'
 import './toDo.css'
 
- 
+ const ToDo = () => {
+    const [newTask, setNewTask] = useState('')
+    const [allTask, setAllTask] = useState([])
+    const [editIndex, setEditIndex] = useState(null)
+
+
+    const handleInputChange = (e)=>{
+        setNewTask(e.target.value)
+    }
+
+    const handleAddTask = ()=>{
+ if(newTask.trim() !== '') {
+    if(editIndex !== null){
+        const updatedTask = [...allTask]
+        updatedTask[editIndex] = newTask
+        setAllTask(updatedTask)
+        setEditIndex(null)
+    } else {
+
+        setAllTask([...allTask, newTask])
+    }
+    setNewTask('')
+ }
+   
+    }
+
+    const handleDeleteTask = (index)=>{
+// console.log('hiii')
+   const updatedTask = [...allTask]
+   updatedTask.splice(index,1)
+   setAllTask(updatedTask)
+   setEditIndex(null)
+    }
+    const handleEditTask = (index)=>{
+        setNewTask(allTask[index])
+        setEditIndex(index)
+
+    }
+
+    return (
+        <>
+        <div style={{margin:'100px'}}>
+          <h1>To do list</h1>
+          <input
+          type='text'
+          placeholder='Add a new Task...'
+          value={newTask}
+          onChange={handleInputChange}
+          />
+          <button onClick ={handleAddTask}>{editIndex !== null ? 'Update' : 'Add'}</button>
+          {/* {allTask} */}
+        {/* {newTask} */}
+          <ul>
+          {allTask.map((item, index)=>{
+            return (
+                <li key={index}>{item}
+                <button onClick ={() => handleEditTask(index)}>Edit</button>
+                <button onClick ={() => handleDeleteTask(index)}>Delete</button>
+                </li>
+                
+            )
+          })
+          }
+          </ul>
+         
+            </div>
+            </>
+    )
+
+ }
+
+ export default ToDo
       
 
 

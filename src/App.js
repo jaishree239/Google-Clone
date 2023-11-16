@@ -15,9 +15,9 @@ function App() {
 {/* <Home /> */}
 {/* <Search /> */}
 {/* <Form /> */}
-{/* <ToDo /> */}
+<ToDo />
 {/* <Calculator/> */}
-<ApiCall/>
+{/* <ApiCall/> */}
     </div>
   );
 }
