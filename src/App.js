@@ -4,6 +4,7 @@ import Home from './Page/Home';
 import Search from './Page/Search';
 import Form from './component/form/Form';
 import ToDo from './component/toDoList/ToDo';
+import ApiCall from './component/apiCall/ApiCall';
 import Calculator from './component/calculator/Calculator';
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
 {/* <Home /> */}
 {/* <Search /> */}
 {/* <Form /> */}
-<ToDo />
+{/* <ToDo /> */}
 {/* <Calculator/> */}
+<ApiCall/>
     </div>
   );
 }

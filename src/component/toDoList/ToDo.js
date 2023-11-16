@@ -1,72 +1,8 @@
 import React, { useState } from 'react'
 import './toDo.css'
 
- const Todo = () => {
-  const [newTask, setNewTask] = useState('')
-  const [allTask, setAllTask] = useState([])
-  const [editIndex, setEditIndex] = useState(null)
-
-  const handleInputChange = (e) => {
-    
-    setNewTask(e.target.value)
-  }
-  const handleAddTask = () => {
-    // console.log('hi')
-    if(newTask.trim()!== ''){
-      if(editIndex !== null){
-        const editedTask = [...allTask]
-        editedTask[editIndex] = newTask
-        setAllTask(editedTask)
-        setEditIndex(null)
-      } else {
-
-        setAllTask([...allTask, newTask])
-      }
-
-      setNewTask('')
-
-    }
-  }
-  const handleDeleteTask = (index) => {
-    // console.log('hi')
-    const deletedTask = [...allTask]
-    deletedTask.splice(index,1)
-    setAllTask(deletedTask)
-    setEditIndex(null)
-  }
-  const handleEditTask = (index) => {
-    console.log('edit')
-    // const editedTask = allTask(index)
-    setNewTask(allTask[index])
-    setEditIndex(index)
-    
-  }
-
-  return (
-    <>
-    <div className='todo'>
-      <input
-      type='text'
-      placeholder='Add a task'
-      value={newTask}
-      onChange={handleInputChange}
-      />
-      <button onClick={handleAddTask}>{ editIndex !== null ? 'Update' : 'Add'}</button>
-<ul>{allTask.map((item,index)=>{
-  return (
-    <li key={index}>{item}
-    <button onClick={() => handleEditTask(index)}>Edit</button>
-    <button onClick={() => handleDeleteTask(index)}>Delete</button>
-    </li>
-  )
-})}</ul>
-    </div>
-    </>
-  )
-
- }
-
- export default Todo
+ 
+      
 
 
 // import React, { useState } from 'react';
