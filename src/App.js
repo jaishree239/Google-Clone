@@ -1,11 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
 import Home from './Page/Home';
-import Search from './Page/Search';
+// import Search from './Page/Search';
 import Form from './component/form/Form';
 import ToDo from './component/toDoList/ToDo';
 import ApiCall from './component/apiCall/ApiCall';
 import Calculator from './component/calculator/Calculator';
+import Search from './component/search/Search';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
 {/* <Home /> */}
 {/* <Search /> */}
 {/* <Form /> */}
-<ToDo />
+{/* <ToDo /> */}
 {/* <Calculator/> */}
 {/* <ApiCall/> */}
+<Search />
     </div>
   );
 }

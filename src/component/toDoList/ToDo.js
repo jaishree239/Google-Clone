@@ -27,6 +27,9 @@ import './toDo.css'
    
     }
 
+    // ul.app
+
+
     const handleDeleteTask = (index)=>{
 // console.log('hiii')
    const updatedTask = [...allTask]
