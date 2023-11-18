@@ -5,7 +5,7 @@ const Pagination = () => {
   const [productData, setProductData] = useState([])
   const [page, setPage] = useState(1)
   const [totalPages, setTotalPages] =  useState(0)
-  // const [productData, setProductData] = useState([])
+  
 
   const fetchProduct =  async() => {
     // const res = await fetch('https://dummyjson.com/products?limit=100')
@@ -33,15 +33,12 @@ const Pagination = () => {
   // },[])
   },[page])
 
-  // thumbnail
   return (
     <div>
       <div className='products'>
-{/* <ul> */}
 {/* {productData.length > 0 && productData.slice( page *10-10,page * 10).map((item)=>{ */}
 {productData.length > 0 && productData.map((item)=>{
       return (
-        // <li>{item.title}</li>
         <div key={item.id} className='products__single'>
          <img src={item.thumbnail} alt={item.title} />
          <br/>
@@ -50,8 +47,6 @@ const Pagination = () => {
        
       )
     })}
-{/* </ul> */}
-  
    
     </div> 
 
@@ -73,8 +68,6 @@ const Pagination = () => {
   {/* <span className={page < productData.length/10 ? '' : 'pagination__disabled' } */}
   <span className={page < totalPages? '' : 'pagination__disabled' }
   onClick={() => selectedPageHandler(page+1)}>Next</span>
-  
-  {/* } */}
   
  </div>
   )

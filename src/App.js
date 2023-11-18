@@ -8,6 +8,7 @@ import ApiCall from './component/apiCall/ApiCall';
 import Calculator from './component/calculator/Calculator';
 import Search from './component/search/Search';
 import Pagination from './component/pagination/Pagination';
+import ReadMore from './component/readMore/ReadMore';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
 {/* <Calculator/> */}
 {/* <ApiCall/> */}
 {/* <Search /> */}
-<Pagination />
+{/* <Pagination /> */}
+<ReadMore />
     </div>
   );
 }
