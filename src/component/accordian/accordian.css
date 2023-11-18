@@ -1,0 +1,11 @@
+.accordian__question {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.accordian__ans {
+    background-color: red;
+}

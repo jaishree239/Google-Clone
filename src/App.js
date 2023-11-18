@@ -9,6 +9,7 @@ import Calculator from './component/calculator/Calculator';
 import Search from './component/search/Search';
 import Pagination from './component/pagination/Pagination';
 import ReadMore from './component/readMore/ReadMore';
+import Accordian from './component/accordian/Accordian';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
 {/* <ApiCall/> */}
 {/* <Search /> */}
 {/* <Pagination /> */}
-<ReadMore />
+{/* <ReadMore /> */}
+<Accordian />
     </div>
   );
 }
