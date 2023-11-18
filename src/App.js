@@ -7,6 +7,7 @@ import ToDo from './component/toDoList/ToDo';
 import ApiCall from './component/apiCall/ApiCall';
 import Calculator from './component/calculator/Calculator';
 import Search from './component/search/Search';
+import Pagination from './component/pagination/Pagination';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
 {/* <ToDo /> */}
 {/* <Calculator/> */}
 {/* <ApiCall/> */}
-<Search />
+{/* <Search /> */}
+<Pagination />
     </div>
   );
 }
