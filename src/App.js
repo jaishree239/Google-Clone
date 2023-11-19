@@ -10,6 +10,8 @@ import Search from './component/search/Search';
 import Pagination from './component/pagination/Pagination';
 import ReadMore from './component/readMore/ReadMore';
 import Accordian from './component/accordian/Accordian';
+import DropDown from './component/dropdown/DropDown';
+import ToolTip from './component/tooltip/ToolTip';
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
 {/* <Search /> */}
 {/* <Pagination /> */}
 {/* <ReadMore /> */}
-<Accordian />
+{/* <Accordian /> */}
+<DropDown />
+<ToolTip />
     </div>
   );
 }
