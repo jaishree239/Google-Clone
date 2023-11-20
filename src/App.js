@@ -28,10 +28,11 @@ function App() {
 {/* <Pagination /> */}
 {/* <ReadMore /> */}
 {/* <Accordian /> */}
-<DropDown />
+{/* <DropDown /> */}
 <ToolTip />
     </div>
   );
 }
 
 export default App;
+// style={{margin:'150px'}}
