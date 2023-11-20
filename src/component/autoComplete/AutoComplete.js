@@ -22,12 +22,9 @@ const AutoComplete = () => {
         setSearchTerm(e.target.value)
     }
     const handleSearch = (query) => {
-        setSearchTerm(query)
-       
-        
+        setSearchTerm(query)     
     }
 
-   
   return (
     <div style={{margin:'150px'}}>
         <input 

@@ -13,6 +13,7 @@ import Accordian from './component/accordian/Accordian';
 import DropDown from './component/dropdown/DropDown';
 import ToolTip from './component/tooltip/ToolTip';
 import AutoComplete from './component/autoComplete/AutoComplete';
+import LoadMore from './component/loadMore/LoadMore';
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
 {/* <Accordian /> */}
 {/* <DropDown /> */}
 {/* <ToolTip /> */}
-<AutoComplete />
+{/* <AutoComplete /> */}
+<LoadMore />
     </div>
   );
 }
