@@ -1,4 +1,4 @@
-const mockData = [
+
 {"id":1,"first_name":"Bernhard","last_name":"Ingerman","email":"bingerman0@uol.com.br","gender":"Male","city":"Majennang"},
 {"id":2,"first_name":"Lindsy","last_name":"Duesbury","email":"lduesbury1@bandcamp.com","gender":"Female","city":"Kukur"},
 {"id":3,"first_name":"Berny","last_name":"O'Lynn","email":"bolynn2@hao123.com","gender":"Male","city":"Thiers"},

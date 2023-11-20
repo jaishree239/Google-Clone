@@ -12,6 +12,7 @@ import ReadMore from './component/readMore/ReadMore';
 import Accordian from './component/accordian/Accordian';
 import DropDown from './component/dropdown/DropDown';
 import ToolTip from './component/tooltip/ToolTip';
+import AutoComplete from './component/autoComplete/AutoComplete';
 
 function App() {
   return (
@@ -25,14 +26,16 @@ function App() {
 {/* <Calculator/> */}
 {/* <ApiCall/> */}
 {/* <Search /> */}
-<Pagination />
+{/* <Pagination /> */}
 {/* <ReadMore /> */}
 {/* <Accordian /> */}
 {/* <DropDown /> */}
 {/* <ToolTip /> */}
+<AutoComplete />
     </div>
   );
 }
 
 export default App;
 // style={{margin:'150px'}}
+// , {useState, useEffect}
