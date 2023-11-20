@@ -25,11 +25,11 @@ function App() {
 {/* <Calculator/> */}
 {/* <ApiCall/> */}
 {/* <Search /> */}
-{/* <Pagination /> */}
+<Pagination />
 {/* <ReadMore /> */}
 {/* <Accordian /> */}
 {/* <DropDown /> */}
-<ToolTip />
+{/* <ToolTip /> */}
     </div>
   );
 }

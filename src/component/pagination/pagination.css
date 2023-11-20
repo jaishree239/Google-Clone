@@ -1,4 +1,29 @@
-.products {
+
+.page {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    
+}
+
+.page > span {
+    border: 1px solid gray;
+    cursor: pointer;
+    padding:15px 20px;
+}
+
+.page__selected {
+    background-color: rgba(220, 220, 220);
+
+}
+
+.page__disabled {
+    opacity:0;
+}
+
+
+
+/* .products {
     margin: 20px;
     padding:0;
     display: grid;
@@ -43,4 +68,4 @@
 .pagination__disabled {
     opacity: 0
 
-}
+} */
