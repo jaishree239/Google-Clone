@@ -14,6 +14,7 @@ import DropDown from './component/dropdown/DropDown';
 import ToolTip from './component/tooltip/ToolTip';
 import AutoComplete from './component/autoComplete/AutoComplete';
 import LoadMore from './component/loadMore/LoadMore';
+import InfiniteScroll from './component/infiniteScroll/InfiniteScroll';
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
 {/* <DropDown /> */}
 {/* <ToolTip /> */}
 {/* <AutoComplete /> */}
-<LoadMore />
+{/* <LoadMore /> */}
+<InfiniteScroll />
     </div>
   );
 }
