@@ -13,7 +13,10 @@ const InfiniteScroll = () => {
     const json = await res.json();
     // console.log('json', json)
     // setTodo(json )
-    setTodo((prevData) => [ ...prevData, ...json ])
+    // setTodo((prevData) => [ ...prevData, ...json ])
+    setTodo((prevData) => {
+        return [...new Set([ ...prevData, ...json ])]
+    })
   }
 
   const handleInfiniteScroll = () => {

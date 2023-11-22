@@ -23,7 +23,7 @@ function App() {
          
 {/* <Home /> */}
 {/* <Search /> */}
-{/* <Form /> */}
+<Form />
 {/* <ToDo /> */}
 {/* <Calculator/> */}
 {/* <ApiCall/> */}
@@ -35,7 +35,7 @@ function App() {
 {/* <ToolTip /> */}
 {/* <AutoComplete /> */}
 {/* <LoadMore /> */}
-<InfiniteScroll />
+{/* <InfiniteScroll /> */}
     </div>
   );
 }
