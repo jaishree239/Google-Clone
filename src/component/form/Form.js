@@ -1,42 +1,74 @@
-import React from 'react'
-import './Form.css';
+import React, {useState, useEffect} from 'react'
+import './form.css';
+import FormInput from './FormInput';
 
 const Form = () => {
+const [valuesForm, setValuesForm] = useState({
+  username: '',
+  email: '',
+  birthday: '',
+  password: '',
+  confirmPassword: '',
+})
+
+const inputsMapping = [
+  {
+    id: 1,
+    name: 'username',
+    type: 'text',
+    placeholder: 'Username',
+    label: 'Username'
+  },
+  {
+    id: 2,
+    name: 'email',
+    type: 'email',
+    placeholder: 'Email',
+    label: 'Email'
+  },
+  {
+    id: 3,
+    name: 'birthday',
+    type: 'date',
+    placeholder: 'Birthday',
+    label: 'Birthday'
+  },
+  {
+    id: 4,
+    name: 'password',
+    type: 'password',
+    placeholder: 'Password',
+    label: 'Password'
+  },
+  {
+    id: 5,
+    name: 'confirmPassword',
+    type: 'password',
+    placeholder: 'ConfirmPassword',
+    label: 'ConfirmPassword'
+  },
+]
+console.log('valuesForm', valuesForm)
+
+const handleChange = (e) => {
+  setValuesForm({...valuesForm, 
+    [e.target.name]: e.target.value})
+}
+
   return (
     <div className='form'>
-    {/* <div>Form hiii</div> */}
-    {/* <div>Form hiii</div> */}
-    <div className='form__header'>
-      <h1>Login</h1>
-    </div>
+    {/* <div className='form__header'> */}
+      <h1>Register</h1>
+    {/* </div> */}
     <div className='form__inputs'>
-      <div className='form__input'>
-      <label>User Name</label>
-      <input type='text'/>
+      {inputsMapping.map((item)=> {
+        return (
+          <FormInput key={item.id} {...item} handleChange={handleChange} value={valuesForm[item.name]}/>
+        )
+      })}
       </div>
-      <div className='form__input'>
-      <label>Email</label>
-    <input type='email'/>
+      <button>Submit</button>
       </div>
-      <div className='form__input'>
-      <label>Date Of Birth</label>
-    <input type='date'/>
-      </div>
-      <div className='form__input'>
-      <label>Password</label>
-    <input type='password'/>
-      </div>
-      <div className='form__input'>
-      <label>Confirm Password</label>
-    <input type='password'/>
-      </div>
-    </div>
-    
-    {/* <label>Name</label>
-    <input/>
-    <label>Name</label>
-    <input/> */}
-    </div>
     
   )
 }

@@ -15,15 +15,17 @@ import ToolTip from './component/tooltip/ToolTip';
 import AutoComplete from './component/autoComplete/AutoComplete';
 import LoadMore from './component/loadMore/LoadMore';
 import InfiniteScroll from './component/infiniteScroll/InfiniteScroll';
+import ReactCounter from './component/reactCounter/ReactCounter';
 
 function App() {
   return (
-    <div className="app">
+    // <div className="app">
+    <div >
          {/* learnings in reactjs in jaishree */}
          
 {/* <Home /> */}
 {/* <Search /> */}
-<Form />
+{/* <Form /> */}
 {/* <ToDo /> */}
 {/* <Calculator/> */}
 {/* <ApiCall/> */}
@@ -36,6 +38,7 @@ function App() {
 {/* <AutoComplete /> */}
 {/* <LoadMore /> */}
 {/* <InfiniteScroll /> */}
+<ReactCounter />
     </div>
   );
 }
@@ -43,3 +46,5 @@ function App() {
 export default App;
 // style={{margin:'150px'}}
 // , {useState, useEffect}
+// service folder mai api call rahe ga
+// utils folder mai pure functions rahta hai
