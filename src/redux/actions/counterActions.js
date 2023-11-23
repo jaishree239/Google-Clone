@@ -15,3 +15,21 @@ export const Reset = () => {
         type: 'RESET'
     }
 }
+
+// export const Increment = () => {
+//     return {
+//         type: 'INCREMENT'
+//     }
+// }
+
+// export const Decrement = () => {
+//     return {
+//         type: 'DECREMENT'
+//     }
+// }
+
+// export const Reset = () => {
+//     return {
+//         type: 'RESET'
+//     }
+// }
