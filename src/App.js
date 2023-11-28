@@ -16,8 +16,9 @@ import AutoComplete from './component/autoComplete/AutoComplete';
 import LoadMore from './component/loadMore/LoadMore';
 import InfiniteScroll from './component/infiniteScroll/InfiniteScroll';
 import ReactCounter from './component/reactCounter/ReactCounter';
-import ReduxCounter from './componentUsingRedux/reduxCounter/ReduxCounter';
+import CascadingDropDown from './component/cascadingDropDown/CascadingDropDown';
 
+import ReduxCounter from './componentUsingRedux/reduxCounter/ReduxCounter';
 function App() {
   return (
     // <div className="app">
@@ -40,7 +41,11 @@ function App() {
 {/* <LoadMore /> */}
 {/* <InfiniteScroll /> */}
 {/* <ReactCounter /> */}
-<ReduxCounter />
+<CascadingDropDown />
+
+{/* Redux  Stuff*/}
+{/* <ReduxCounter /> */}
+
     </div>
   );
 }

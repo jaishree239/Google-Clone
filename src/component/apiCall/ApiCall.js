@@ -20,22 +20,16 @@ const ApiCall = () => {
       
 //     }
     const fetchApi = async ()=>{
-        try {
-            const res = await fetch('https://jsonplaceholder.typicode.com/todos')
-            const json =  await res.json()
-            
-          setTodo(json)
+         const res = await fetch('https://jsonplaceholder.typicode.com/todos')
+         const json =  await res.json()
+            setTodo(json)
         //   console.log('json', json)
-            
-          
-            
-        } catch (error) {
-console.error('error in data fetching', error)
-        }
-      
     }
+
     useEffect(()=>{
-        fetchApi()
+        fetchApi().catch((err)=>{
+            console.log('err', err)
+        })
     },[])
     
   return (
